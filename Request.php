@@ -21,8 +21,8 @@ class Index
         //请求参数
         dump($request->get());          //获取当前get参数，返回数组形式
         //5.0以后的版本中无法获取到pathinfo中的值
-        dump($request->param());        //返回get到的值和pathinfo中的值
-        //param可以获取 pathinfo、post、get方式传递的参数
+        dump($request->param());        //返回get到的值和path中的值
+        //param可以获取 path、post、get、session、request、file、patch等方式传递的参数
         session('name','liubang');
         dump($request->session());
         dump($request->cookie());
